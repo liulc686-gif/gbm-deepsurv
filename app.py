@@ -30,7 +30,7 @@ def load_models():
     in_features = 34
     net = tt.practical.MLPVanilla(in_features, [512, 256, 128, 64, 32], 1, True, 0.2)
     model = CoxPH(net)
-    model.load_net('deepsurv_net.pt', weights_only=False)
+    model.load_net('deepsurv_net.pt', map_location=torch.device('cpu'), weights_only=False)
 
     # 加载其他 joblib 文件
     preprocessor = joblib.load('preprocessor.joblib')
