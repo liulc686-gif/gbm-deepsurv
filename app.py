@@ -1,3 +1,9 @@
+import os
+
+PYCOX_CACHE_DIR = "/tmp/pycox_data"
+os.makedirs(PYCOX_CACHE_DIR, exist_ok=True)
+os.environ["PYCOX_DATA_DIR"] = PYCOX_CACHE_DIR
+
 import streamlit as st
 import pandas as pd
 import numpy as np
