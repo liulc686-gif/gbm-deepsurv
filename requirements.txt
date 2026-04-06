@@ -1,9 +1,10 @@
-streamlit==1.12.0
-pandas==2.3.3
-numpy==1.26.4
+--extra-index-url https://download.pytorch.org/whl/cpu
+streamlit
+pandas
+numpy
 torch
-joblib==1.5.2
-pycox==0.3.0
-torchtuples==0.2.2
-scikit-learn==1.5.2
-plotly==6.6.0
+joblib
+pycox
+torchtuples
+scikit-learn
+plotly
